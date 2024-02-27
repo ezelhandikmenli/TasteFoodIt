@@ -26,8 +26,8 @@ namespace TasteFoodIt.Controllers
         public PartialViewResult PartialNavbarInfo()
         {
             ViewBag.phone = context.Addresses.Select(x => x.Phone).FirstOrDefault();
-            ViewBag.email = context.Addresses.Select(y => y.Email).FirstOrDefault();
-            ViewBag.description = context.Addresses.Select(z => z.Description).FirstOrDefault();
+            ViewBag.email = context.Addresses.Select(x => x.Email).FirstOrDefault();
+            ViewBag.description = context.Addresses.Select(x => x.Description).FirstOrDefault();
             return PartialView();
         }
         public PartialViewResult PartialNavbar()
@@ -53,6 +53,10 @@ namespace TasteFoodIt.Controllers
             return PartialView(values);
         }
         public PartialViewResult PartialTestimonial()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialChef()
         {
             return PartialView();
         }

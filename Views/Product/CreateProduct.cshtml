@@ -39,7 +39,7 @@
                             @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
                             <br />
                             <label>Ürün Kategorisi</label>
-                            @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+                           @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control"})
                             <br />
                         </div>
                         <button type="submit" class="btn btn-primary">Ürünü Ekle</button>

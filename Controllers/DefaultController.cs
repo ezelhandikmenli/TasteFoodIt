@@ -60,5 +60,30 @@ namespace TasteFoodIt.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
+        
+
+        public PartialViewResult PartialSocialMedia()
+        {
+            var values = context.SocialMedias.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialOpenDayHour()
+        {
+            var values = context.OpenDayHours.ToList(); 
+            return PartialView(values);
+        }
+        public PartialViewResult PartialReservationNow()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialInfo()
+        {
+            return PartialView();
+        }
+
     }
 }

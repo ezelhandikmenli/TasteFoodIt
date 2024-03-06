@@ -23,9 +23,9 @@ namespace TasteFoodIt.Controllers
             return RedirectToAction("NotificationList");
 
         }
-        public ActionResult NotificationIsReadChangeToFalse(int id)
-        {
+        //public ActionResult NotificationIsReadChangeToFalse(int id)
+        //{
 
-        }
+        //}
     }
 }

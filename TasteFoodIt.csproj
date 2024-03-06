@@ -135,6 +135,7 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ServicesLayoutController.cs" />
     <Compile Include="Entities\About.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\OpenDayHour.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
@@ -162,6 +164,14 @@
     <Compile Include="Migrations\202403021001206_mig3.cs" />
     <Compile Include="Migrations\202403021001206_mig3.designer.cs">
       <DependentUpon>202403021001206_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403051712056_mig31.cs" />
+    <Compile Include="Migrations\202403051712056_mig31.designer.cs">
+      <DependentUpon>202403051712056_mig31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403051742102_mig4.cs" />
+    <Compile Include="Migrations\202403051742102_mig4.designer.cs">
+      <DependentUpon>202403051742102_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4814,6 +4824,7 @@
     <Content Include="Views\About\AboutList.cshtml" />
     <Content Include="Views\ServicesLayout\Index.cshtml" />
     <Content Include="Views\ServicesLayout\PartialServicesDetail.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4859,6 +4870,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403021001206_mig3.resx">
       <DependentUpon>202403021001206_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403051712056_mig31.resx">
+      <DependentUpon>202403051712056_mig31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403051742102_mig4.resx">
+      <DependentUpon>202403051742102_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

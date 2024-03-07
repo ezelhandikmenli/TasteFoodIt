@@ -137,6 +137,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ServicesChefController.cs" />
     <Compile Include="Controllers\ServicesLayoutController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -4825,6 +4826,8 @@
     <Content Include="Views\ServicesLayout\Index.cshtml" />
     <Content Include="Views\ServicesLayout\PartialServicesDetail.cshtml" />
     <Content Include="Views\Notification\NotificationList.cshtml" />
+    <Content Include="Views\ServicesChef\ChefList.cshtml" />
+    <Content Include="Views\ServicesChef\PartialReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

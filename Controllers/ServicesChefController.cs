@@ -12,7 +12,8 @@ namespace TasteFoodIt.Controllers
         TasteContext context = new TasteContext();
         public ActionResult ChefList()
         {
-            return View();    
+            var values = context.Chefs.ToList();
+            return View(values);    
         }
         [HttpGet]
         public PartialViewResult PartialReservation()

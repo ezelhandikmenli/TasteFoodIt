@@ -15,5 +15,16 @@ namespace TasteFoodIt.Controllers
             var value = context.Products.ToList();
             return View(value);
         }
+        [HttpGet]
+        public PartialViewResult ReservationMenu()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult ReservationMenu(Reservation p)
+        {
+            var value = context.Reservations.Add(p);
+            return PartialView(value);
+        }
     }
 }

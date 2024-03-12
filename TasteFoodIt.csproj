@@ -135,8 +135,10 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ServicesChefController.cs" />
     <Compile Include="Controllers\ServicesLayoutController.cs" />
     <Compile Include="Controllers\ServicesMenuController.cs" />
@@ -4831,6 +4833,8 @@
     <Content Include="Views\ServicesChef\PartialReservation.cshtml" />
     <Content Include="Views\ServicesMenu\MenuList.cshtml" />
     <Content Include="Views\ServicesMenu\ReservationMenu.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Profile\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

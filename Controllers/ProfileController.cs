@@ -11,6 +11,7 @@ namespace TasteFoodIt.Controllers
         // GET: Profile
         public ActionResult Index()
         {
+            ViewBag.v = Session['a'];
             return View();
         }
     }

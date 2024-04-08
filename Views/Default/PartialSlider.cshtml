@@ -3,23 +3,32 @@
 
 <section class="hero-wrap">
     <div class="home-slider owl-carousel js-fullheight">
-        @foreach (var item in Model)
+        
+        @if (Model != null)
         {
-            <div class="slider-item js-fullheight" style="background-image: url(@item.ImageUrl);">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                        <div class="col-md-12 ftco-animate">
-                            <div class="text w-100 mt-5 text-center">
-                                <span class="subheading">Taste.it Restaurant</span>
-                                <h1>@item.Title</h1>
-                                <span class="subheading-2">@item.Decription</span>
-                            </div>
-                        </div>
+            foreach (var item in Model)
+            {
+    <div class="slider-item js-fullheight" style="background-image: url(@item.ImageUrl);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 mt-5 text-center">
+                        <span class="subheading">Taste.it Restaurant</span>
+                        <h1>@item.Title</h1>
+                        <span class="subheading-2">@item.Decription</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+            }
         }
+        else
+        {
+            <p>Model boş.</p>
+        }
+
     </div>
 </section>
 

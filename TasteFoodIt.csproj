@@ -2223,6 +2223,7 @@
     <Content Include="Templates\tasteit-master\images\drink-5.jpg" />
     <Content Include="Templates\tasteit-master\images\drink-6.jpg" />
     <Content Include="Templates\tasteit-master\images\drink-7.jpg" />
+    <Content Include="Templates\tasteit-master\images\girl.png" />
     <Content Include="Templates\tasteit-master\images\image_1.jpg" />
     <Content Include="Templates\tasteit-master\images\image_2.jpg" />
     <Content Include="Templates\tasteit-master\images\image_3.jpg" />
@@ -4845,6 +4846,11 @@
     <Content Include="Views\ServicesMenu\ReservationMenu.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Dashboard\Chart.cshtml" />
+    <Content Include="Views\Dashboard\ProgressBar.cshtml" />
+    <Content Include="Views\Dashboard\Mesajlar.cshtml" />
+    <Content Include="Views\Dashboard\Rezervasyon.cshtml" />
+    <Content Include="Views\Dashboard\js.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

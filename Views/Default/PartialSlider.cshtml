@@ -1,31 +1,45 @@
-﻿﻿@model List<TasteFoodIt.Entities.Slider>
+﻿﻿﻿@model List<TasteFoodIt.Entities.Slider>
+<section class="hero-wrap">
+    <div class="home-slider owl-carousel js-fullheight">
+        @foreach (var item in Model)
+        {
+            <div class="slider-item js-fullheight" style="background-image: url(@item.ImageUrl);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="text w-100 mt-5 text-center">
+                                <span class="subheading">@item.Title</span>
 
-
-    <section class="hero-wrap">
-        <div class="home-slider owl-carousel js-fullheight">
-
-           
-                @foreach (var item in Model)
-                {
-        <div class="slider-item js-fullheight" style="background-image: url(@item.ImageUrl);">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 mt-5 text-center">
-                            <span class="subheading">Taste.it Restaurant</span>
-                            <h1>@item.Title</h1>
-                            <span class="subheading-2">@item.Decription</span>
+                                <span class="subheading-2">@item.Decription</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                }
-           
+        }
 
-        </div>
-    </section>
+    </div>
+</section>
+<style>
+    /* Slider yüksekliği ayarı */
+    .home-slider {
+        height: 100vh; /* Viewport yüksekliğine eşit olacak şekilde ayarlayın */
+    }
+
+    /* Üst ve alt boşlukları kaldırma */
+    .hero-wrap {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* Metinlerin yukarıda hizalanması */
+    .slider-text {
+        align-items: flex-start;
+    }
+</style>
+
+
 
 @*<div class="slider-item js-fullheight" style="background-image: url(/Templates/tasteit-master/images/bg_2.jpg);">
         <div class="overlay"></div>
@@ -40,9 +54,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 
-    <div class="slider-item js-fullheight" style="background-image: url(https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg);">
+@*<div class="slider-item js-fullheight" style="background-image: url(https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">

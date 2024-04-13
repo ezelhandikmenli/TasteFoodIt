@@ -13,8 +13,8 @@
                     <tr>
                         <th>Order ID</th>
                         <th>Customer</th>
-                        <th>Item</th>
-                        <th>Status</th>
+                        
+                        <th>Date</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -23,8 +23,8 @@
                     {
                         <tr>
                             <td><a href="#">@item.ReservationId</a></td>
-                            @*<td>@item.Name</td>*@
-                            <td>@item.ReservationStatus</td>
+                            <td>@item.Name</td>
+                            <td>@item.ReservationDate</td>
                             @if (item.ReservationStatus == "Onaylandı")
                             {
                                 <td>

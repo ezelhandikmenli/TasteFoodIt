@@ -130,6 +130,7 @@
     <Compile Include="Context\TasteContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdminReservationController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -4851,6 +4852,8 @@
     <Content Include="Views\Dashboard\Mesajlar.cshtml" />
     <Content Include="Views\Dashboard\Rezervasyon.cshtml" />
     <Content Include="Views\Dashboard\js.cshtml" />
+    <Content Include="Views\AdminReservation\ReservationList.cshtml" />
+    <Content Include="Views\AdminReservation\UpdateReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4859,6 +4862,7 @@
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
     <Folder Include="ToDoList\" />
+    <Folder Include="Views\AdmiReservation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\TasteContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminAboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdminProductController.cs" />
     <Compile Include="Controllers\AdminReservationController.cs" />
@@ -4858,6 +4859,9 @@
     <Content Include="Views\AdminProduct\CreateProduct.cshtml" />
     <Content Include="Views\AdminProduct\ProductList.cshtml" />
     <Content Include="Views\AdminProduct\UpdateProduct.cshtml" />
+    <Content Include="Views\AdminAbout\AboutList.cshtml" />
+    <Content Include="Views\AdminAbout\CreateAbout.cshtml" />
+    <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

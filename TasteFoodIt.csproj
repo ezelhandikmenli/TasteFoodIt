@@ -130,6 +130,9 @@
     <Compile Include="Context\TasteContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminAddressController.cs" />
+    <Compile Include="Controllers\AdminCategoryController.cs" />
+    <Compile Include="Controllers\AdminChefController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdminProductController.cs" />
     <Compile Include="Controllers\AdminReservationController.cs" />
@@ -4862,6 +4865,15 @@
     <Content Include="Views\AdminAbout\AboutList.cshtml" />
     <Content Include="Views\AdminAbout\CreateAbout.cshtml" />
     <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
+    <Content Include="Views\AdminAddress\AddressList.cshtml" />
+    <Content Include="Views\AdminAddress\CreateAddress.cshtml" />
+    <Content Include="Views\AdminAddress\UpdateAddress.cshtml" />
+    <Content Include="Views\AdminCategory\CategoryList.cshtml" />
+    <Content Include="Views\AdminCategory\CategoryCreate.cshtml" />
+    <Content Include="Views\AdminCategory\UpdateCategory.cshtml" />
+    <Content Include="Views\AdminChef\ChefList.cshtml" />
+    <Content Include="Views\AdminChef\CreateChef.cshtml" />
+    <Content Include="Views\AdminChef\UpdateChef.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

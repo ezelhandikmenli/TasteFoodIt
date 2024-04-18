@@ -134,8 +134,12 @@
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminChefController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdminOpenDayHourController.cs" />
     <Compile Include="Controllers\AdminProductController.cs" />
+    <Compile Include="Controllers\AdminProfileController.cs" />
     <Compile Include="Controllers\AdminReservationController.cs" />
+    <Compile Include="Controllers\AdminSliderController.cs" />
+    <Compile Include="Controllers\AdminTestimonialController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -4874,6 +4878,16 @@
     <Content Include="Views\AdminChef\ChefList.cshtml" />
     <Content Include="Views\AdminChef\CreateChef.cshtml" />
     <Content Include="Views\AdminChef\UpdateChef.cshtml" />
+    <Content Include="Views\AdminProfile\Index.cshtml" />
+    <Content Include="Views\AdminOpenDayHour\CreateOpenDayHour.cshtml" />
+    <Content Include="Views\AdminOpenDayHour\OpenDayHourList.cshtml" />
+    <Content Include="Views\AdminOpenDayHour\UpdateOpenDayHour.cshtml" />
+    <Content Include="Views\AdminSlider\SliderList.cshtml" />
+    <Content Include="Views\AdminSlider\CreateSlider.cshtml" />
+    <Content Include="Views\AdminSlider\UpdateSlider.cshtml" />
+    <Content Include="Views\AdminTestimonial\TestimonialList.cshtml" />
+    <Content Include="Views\AdminTestimonial\CreateTestimonial.cshtml" />
+    <Content Include="Views\AdminTestimonial\UpdateTestimonial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4882,7 +4896,6 @@
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
     <Folder Include="ToDoList\" />
-    <Folder Include="Views\AdminProfile\" />
     <Folder Include="Views\AdmiReservation\" />
   </ItemGroup>
   <ItemGroup>

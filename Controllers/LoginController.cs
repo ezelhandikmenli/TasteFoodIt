@@ -18,16 +18,26 @@ namespace TasteFoodIt.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Index(Admin p)
+        public ActionResult Index(Admin admin)
         {
-            var values = context.Admins.FirstOrDefault(x => x.UserName == p.UserName && x.Password == p.Password);
+            var values = context.Admins.FirstOrDefault(x => x.UserName == admin.UserName && x.Password == admin.Password);
             if (values != null)
             {
                 FormsAuthentication.SetAuthCookie(values.UserName, true);
-                Session["a"] = values.UserName;
-                return RedirectToAction("ProductList", "Product");
+                Session["UserName"] = values.UserName;
+                Session["adminId"] = values.AdminId;
+                Session["name"] = values.Name;
+                Session["surname"] = values.Surname;
+                Session["imageUrl"] = values.ImageUrl;
+                return RedirectToAction("ProfileDetail", "Profile");
             }
             return View();
+        }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Login");
         }
     }
 }

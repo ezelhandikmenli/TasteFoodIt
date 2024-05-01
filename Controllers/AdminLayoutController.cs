@@ -9,7 +9,8 @@ namespace TasteFoodIt.Controllers
 {
     public class AdminLayoutController : Controller
     {
-        TasteContext context = new TasteContext();  
+        TasteContext tasteContext = new TasteContext();
+        // GET: AdminLayout
         public ActionResult Index()
         {
             return View();
@@ -24,25 +25,34 @@ namespace TasteFoodIt.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
-            ViewBag.notificationIsReadByFalseCount = context.Notifications.Where(x=>x.IsRead == false).Count();
-            var values = context.Notifications.Where(x =>x.IsRead == false).ToList();
-            return PartialView(values);
+            ViewBag.isim = Session["name"];
+            ViewBag.img = Session["img"];
+            ViewBag.notificationIsreadByFalseCount = tasteContext.Notifications.Where(x => x.IsRead == false).Count();
+            var value = tasteContext.Notifications.Where(x => x.IsRead == false).ToList();
+            return PartialView(value);
+        }
+        public PartialViewResult PartialMessage()
+        {
+
+            ViewBag.contactIsreadByFalseCount = tasteContext.Contacts.Where(x => x.IsRead == false).Count();
+            var value = tasteContext.Contacts.Where(x => x.IsRead == false).ToList();
+            return PartialView(value);
         }
         public PartialViewResult PartialFooter()
         {
             return PartialView();
         }
-
         public PartialViewResult PartialScript()
         {
             return PartialView();
         }
         public ActionResult NotificationStatusChangeToTrue(int id)
         {
-            var values = context.Notifications.Find(id);
+            var values = tasteContext.Notifications.Find(id);
             values.IsRead = true;
-            context.SaveChanges();
-            return RedirectToAction("CategoryList", "Category");
+            tasteContext.SaveChanges();
+            return RedirectToAction("ProductList", "AdminProduct");
+            ;
         }
     }
 }

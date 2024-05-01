@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using TasteFoodIt.Context;
 using TasteFoodIt.Entities;
 
-
 namespace TasteFoodIt.Controllers
 {
     public class AdminProfileController : Controller
@@ -17,7 +16,7 @@ namespace TasteFoodIt.Controllers
         public ActionResult Index()
         {
             ViewBag.name = "Profil";
-            ViewBag.v = Session["Name"];
+            ViewBag.v = Session["name"];
 
             var value = context.Admins.Find(Session["id"]);
             return View(value);

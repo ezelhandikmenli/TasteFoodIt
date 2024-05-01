@@ -133,12 +133,16 @@
     <Compile Include="Controllers\AdminAddressController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminChefController.cs" />
+    <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdminMailController.cs" />
+    <Compile Include="Controllers\AdminNotificationController.cs" />
     <Compile Include="Controllers\AdminOpenDayHourController.cs" />
     <Compile Include="Controllers\AdminProductController.cs" />
     <Compile Include="Controllers\AdminProfileController.cs" />
     <Compile Include="Controllers\AdminReservationController.cs" />
     <Compile Include="Controllers\AdminSliderController.cs" />
+    <Compile Include="Controllers\AdminSocialMediaController.cs" />
     <Compile Include="Controllers\AdminTestimonialController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
@@ -158,6 +162,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Mail.cs" />
     <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\OpenDayHour.cs" />
     <Compile Include="Entities\Product.cs" />
@@ -195,6 +200,14 @@
     <Compile Include="Migrations\202403231209111_mig6.cs" />
     <Compile Include="Migrations\202403231209111_mig6.designer.cs">
       <DependentUpon>202403231209111_mig6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405011609398_mig8.cs" />
+    <Compile Include="Migrations\202405011609398_mig8.designer.cs">
+      <DependentUpon>202405011609398_mig8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405011652397_mig9.cs" />
+    <Compile Include="Migrations\202405011652397_mig9.designer.cs">
+      <DependentUpon>202405011652397_mig9.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -255,6 +268,7 @@
     <Content Include="Templates\ruang-admin\form_basics.html" />
     <Content Include="Templates\ruang-admin\img\boy.png" />
     <Content Include="Templates\ruang-admin\img\error.svg" />
+    <Content Include="Templates\ruang-admin\img\Ezelhan_Dikmenlioğlu.png" />
     <Content Include="Templates\ruang-admin\img\girl.png" />
     <Content Include="Templates\ruang-admin\img\innovation.svg" />
     <Content Include="Templates\ruang-admin\img\logo\logo.png" />
@@ -2233,6 +2247,7 @@
     <Content Include="Templates\tasteit-master\images\drink-5.jpg" />
     <Content Include="Templates\tasteit-master\images\drink-6.jpg" />
     <Content Include="Templates\tasteit-master\images\drink-7.jpg" />
+    <Content Include="Templates\tasteit-master\images\Ezelhan_Dikmenlioğlu.png" />
     <Content Include="Templates\tasteit-master\images\girl.png" />
     <Content Include="Templates\tasteit-master\images\image_1.jpg" />
     <Content Include="Templates\tasteit-master\images\image_2.jpg" />
@@ -4888,6 +4903,15 @@
     <Content Include="Views\AdminTestimonial\TestimonialList.cshtml" />
     <Content Include="Views\AdminTestimonial\CreateTestimonial.cshtml" />
     <Content Include="Views\AdminTestimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\AdminNotification\NotificationList.cshtml" />
+    <Content Include="Views\AdminNotification\CreateNotification.cshtml" />
+    <Content Include="Views\AdminNotification\UpdateNotification.cshtml" />
+    <Content Include="Views\AdminMail\MailList.cshtml" />
+    <Content Include="Views\AdminSocialMedia\SocialMediaList.cshtml" />
+    <Content Include="Views\AdminSocialMedia\CreateSocialMedia.cshtml" />
+    <Content Include="Views\AdminSocialMedia\UpdateSocialMedia.cshtml" />
+    <Content Include="Views\AdminLayout\PartialMessage.cshtml" />
+    <Content Include="Views\AdminContact\ContactList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4946,6 +4970,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403231209111_mig6.resx">
       <DependentUpon>202403231209111_mig6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405011609398_mig8.resx">
+      <DependentUpon>202405011609398_mig8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405011652397_mig9.resx">
+      <DependentUpon>202405011652397_mig9.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

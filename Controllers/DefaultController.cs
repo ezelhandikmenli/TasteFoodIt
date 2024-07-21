@@ -8,12 +8,14 @@ using TasteFoodIt.Context;
 
 namespace TasteFoodIt.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         TasteContext context = new TasteContext();
         public ActionResult Index()
         {
-            return View();
+            var value = context.Sliders.ToList();
+            return PartialView(value);
         }
         public PartialViewResult PartialHead()
         {
@@ -33,6 +35,11 @@ namespace TasteFoodIt.Controllers
         public PartialViewResult PartialNavbar()
         {
             return PartialView();
+        }
+        public PartialViewResult PartialNavbarInfoSocialMedia()
+        {
+            var value = context.SocialMedias.ToList();
+            return PartialView(value);
         }
         public PartialViewResult PartialSlider()
         {
@@ -55,18 +62,19 @@ namespace TasteFoodIt.Controllers
         }
         public PartialViewResult PartialTestimonial()
         {
-            return PartialView();
+            var value = context.Testimonials.ToList();
+            return PartialView(value);
         }
         public PartialViewResult PartialChef()
         {
-            return PartialView();
+            var value =context.Chefs.ToList();
+            return PartialView(value);
         }
         public PartialViewResult PartialFooter()
         {
             return PartialView();
         }
-        
-
+      
         public PartialViewResult PartialSocialMedia()
         {
             var values = context.SocialMedias.ToList();

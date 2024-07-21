@@ -153,9 +153,12 @@
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ServicesChefController.cs" />
+    <Compile Include="Controllers\ServicesContactController.cs" />
     <Compile Include="Controllers\ServicesLayoutController.cs" />
     <Compile Include="Controllers\ServicesMenuController.cs" />
+    <Compile Include="Controllers\ServicesReservationController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -4861,7 +4864,6 @@
     <Content Include="Views\Default\PartialOpenDayHour.cshtml" />
     <Content Include="Views\Default\PartialReservationNow.cshtml" />
     <Content Include="Views\Default\PartialInfo.cshtml" />
-    <Content Include="Views\About\AboutList.cshtml" />
     <Content Include="Views\ServicesLayout\Index.cshtml" />
     <Content Include="Views\ServicesLayout\PartialServicesDetail.cshtml" />
     <Content Include="Views\Notification\NotificationList.cshtml" />
@@ -4912,6 +4914,13 @@
     <Content Include="Views\AdminSocialMedia\UpdateSocialMedia.cshtml" />
     <Content Include="Views\AdminLayout\PartialMessage.cshtml" />
     <Content Include="Views\AdminContact\ContactList.cshtml" />
+    <Content Include="Views\Default\PartialNavbarInfoSocialMedia.cshtml" />
+    <Content Include="Views\ServicesReservation\ReservationList.cshtml" />
+    <Content Include="Views\ServicesContact\ContactList.cshtml" />
+    <Content Include="Views\Reservation\Index.cshtml" />
+    <Content Include="Views\Reservation\PartialReservationBookYourTable.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\PartialAboutStatistic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

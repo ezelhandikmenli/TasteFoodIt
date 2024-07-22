@@ -12,14 +12,14 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["@name[0]", "@name[1]", "@name[2]"
+    labels: ["@name[0]", "@name[1]", "@name[2]","@name[3]", "@name[4]", "@name[5]"
     ],
     datasets: [{
     label: "Revenue",
     backgroundColor: "#4e73df",
     hoverBackgroundColor: "#2e59d9",
     borderColor: "#4e73df",
-    data: [@price[0], @price[1], @price[2], 
+    data: [@price[0], @price[1], @price[2], @price[3], @price[4], @price[5]],
     }],
     },
     options: {
